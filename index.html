@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cypnk-ui</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" type="module"></script>
+</head>
+<body>
+    <h1 class="title">cypnk-ui</h1>
+    <p class="text">Everything you need to know about cypnk-ui is here.</p>
+    <p class="text">Builded by Yagasaki7K since 2025.</p>
+
+    <h2>Font Family:</h2>
+    <p class="text">Blender Pro Bold - <a href="https://assets.codepen.io/605876/Blender-Pro-Bold.otf">Codepen Download</a></p>
+
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <i class="text">Italic Text</i>
+    <b class="text">Bold Text</b>
+
+    <h2>Button:</h2>
+    <button
+      class="cyber-btn"
+      aria-label="Upgrade"
+    >
+      <span class="backdrop">
+        <span class="corner"></span>
+      </span>
+      <kbd>U</kbd>
+      <span>Upgrade</span>
+      <div class="glitch" aria-hidden="true">
+        <span class="backdrop">
+          <span class="corner"></span>
+        </span>
+        <kbd>水</kbd>
+        <span class="letters">
+          <span>U</span>
+          <span>p</span>
+          <span>g</span>
+          <span>r</span>
+          <span>a</span>
+          <span>d</span>
+          <span>e</span>
+        </span>
+      </div>
+    </button>
+
+
+    <h2>Button with Dialog Box:</h2>
+    <button
+      class="cyber-btn"
+      popovertarget="upgrade"
+      popovertargetaction="show"
+      aria-label="Upgrade"
+      data-action="Upgrade"
+    >
+      <span class="backdrop">
+        <span class="corner"></span>
+      </span>
+      <kbd>U</kbd>
+      <span>Upgrade</span>
+      <div class="glitch" aria-hidden="true">
+        <span class="backdrop">
+          <span class="corner"></span>
+        </span>
+        <kbd>水</kbd>
+        <span class="letters">
+          <span>U</span>
+          <span>p</span>
+          <span>g</span>
+          <span>r</span>
+          <span>a</span>
+          <span>d</span>
+          <span>e</span>
+        </span>
+      </div>
+    </button>
+    <div class="modal" popover="auto" id="upgrade">
+      <section class="modal__body">
+        <div class="body__backdrop">
+          <div class="backdrop">
+            <div class="version">v001.e250597C1372025</div>
+            <div class="corner"></div>
+          </div>
+        </div>
+        <div class="body__content">
+          <h2>
+            <span>Welcome to Dialog Box of Yagasaki</span>
+          </h2>
+          <div class="body__text">
+            <p>
+              You are now looking at the first version of the dialog box developed by Anderson "Yagasaki" Marlon, and more similar tools are in the works. Do you want to follow this journey and help create a 2077 world?
+            </p>
+            <p>Do you want to proceed?</p>
+          </div>
+          <div class="modal__glitch" aria-hidden="true">
+            <h2>
+              <span>Welcome to Dialog Box of Yagasaki</span>
+            </h2>
+            <div class="body__text">
+              <p>
+                You are now looking at the first version of the dialog box developed by Anderson "Yagasaki" Marlon, and more similar tools are in the works. Do you want to follow this journey and help create a 2077 world?
+              </p>
+              <p>Do you want to proceed?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="modal__actions">
+        <button
+          aria-label="Cancel"
+          class="cyber-btn"
+          data-action="Cancel"
+          popovertarget="upgrade"
+          popovertargetaction="close"
+        >
+          <span class="backdrop">
+            <span class="corner"></span>
+          </span>
+          <kbd>水</kbd>
+          <span>Cancel</span>
+        </button>
+        <button
+          autofocus
+          aria-label="Proceed"
+          class="cyber-btn"
+          data-action="Proceed"
+          popovertarget="upgrade"
+          popovertargetaction="close"
+        >
+          <span class="backdrop">
+            <span class="corner"></span>
+          </span>
+          <kbd
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 4v7a4 4 0 0 1-4 4H4"></path>
+              <path d="m9 10-5 5 5 5"></path></svg
+          ></kbd>
+          <span>Proceed</span>
+        </button>
+      </div>
+    </div>
+    <a
+      aria-label="Follow Yagasaki7K"
+      class="bear-link"
+      href="https://twitter.com/intent/follow?screen_name=yagasaki7k"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      <img src="https://github.com/yagasaki7k.png" alt="Yagasaki7K">
+    </a>
+</body>
+</html>
