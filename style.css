@@ -899,3 +899,13 @@ h1, h2, h3, h4 {
 a {
     color: var(--accent);
 }
+
+hr {
+    margin: 1rem 0;
+}
+
+.text-sm {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-family: 'Cyber', sans-serif;
+}
