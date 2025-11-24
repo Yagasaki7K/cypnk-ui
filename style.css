@@ -780,7 +780,7 @@
     --font-ratio-min: 1.2;
     --font-ratio-max: 1.33;
     --font-width-min: 375;
-    --font-width-max: 1500;
+    --font-width-max: 2560;
   }
 
   html {
@@ -820,8 +820,11 @@
 
   body {
     background: #000;
-    display: grid;
-    place-items: center;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: clamp(1rem, 2vw, 3rem);
   }
 
   body::before {
@@ -849,8 +852,8 @@
   .bear-link {
     color: canvasText;
     position: fixed;
-    top: 1rem;
-    left: 1rem;
+    top: clamp(0.5rem, 2vw, 1.5rem);
+    left: clamp(0.5rem, 2vw, 1.5rem);
     width: 48px;
     aspect-ratio: 1;
     display: grid;
@@ -909,3 +912,60 @@ hr {
     line-height: 1rem;
     font-family: 'Cyber', sans-serif;
 }
+
+.page {
+    width: min(1100px, 100%);
+    display: grid;
+    gap: clamp(1rem, 2vw, 2rem);
+    align-content: start;
+  }
+
+.page__header {
+    display: grid;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+.section {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+.typography {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    align-items: center;
+  }
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+main h1,
+main h2,
+main h3,
+main h4,
+main p,
+main i,
+main b {
+    margin: 0;
+  }
+
+main hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background: color-mix(in srgb, var(--accent), transparent 60%);
+  }
+
+@media (max-width: 768px) {
+    .page {
+      width: 100%;
+    }
+
+    .bear-link {
+      position: static;
+      justify-self: start;
+    }
+  }
